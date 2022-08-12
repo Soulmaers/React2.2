@@ -8,12 +8,12 @@ export default function CardsView({ cards }) {
     return (
         <div className="card_view">
             {cards.map((el) =>
-                (<ShopCard card={el} key={el.color + el.name} />))}
+                (<ShopCard card={el} key={el.name + el.color} />))}
         </div>
     )
 }
 
 
 CardsView.propTypes = {
-    cards: PropTypes.arrayOf(PropTypes.object).isRequired,
+    cards: PropTypes.arrayOf(PropTypes.object).isRequired
 };

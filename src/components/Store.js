@@ -8,15 +8,15 @@ import { useState } from 'react'
 
 export default function Store() {
 
-    const [icon, setIcon] = useState('view_module')
-    const onSwitch = (icon) => {
-        setIcon(() => (icon === 'view_module' ? 'view_list' : 'view_module'));
+    const [icons, setIcon] = useState('view_module')
+    const onSwitch = (icons) => {
+        setIcon(() => (icons === 'view_module' ? 'view_list' : 'view_module'));
     }
     return (
         <div className='store'>
-            <IconSwitch icon={icon} onSwitch={onSwitch} />
-            {icon === 'view_module' ?
-                <CardsView cards={products} /> : <ListView item={products} />
+            <IconSwitch icon={icons} onSwitch={onSwitch} />
+            {icons === 'view_module' ?
+                <CardsView cards={products} /> : <ListView items={products} />
             }
 
         </div>

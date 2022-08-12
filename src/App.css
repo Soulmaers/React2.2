@@ -8,7 +8,7 @@ p {
 .icon_Change {
   margin: auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .icon_Change:hover {
@@ -96,7 +96,7 @@ p {
   left: 20px;
 }
 
-.card_button {
+.card_btn {
   height: 25px;
   padding: 5px 8px;
   border: 1px solid red;

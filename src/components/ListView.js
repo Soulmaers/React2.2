@@ -8,7 +8,7 @@ export default function ListView({ items }) {
     return (
         <div className="list_view">
             {items.map((el) =>
-                (<ShopItem item={el} key={el.color + el.name} />))}
+                (<ShopItem item={el} key={el.name + el.color} />))}
         </div>
     )
 }

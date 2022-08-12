@@ -6,7 +6,7 @@ export default function IconSwitch({ icon, onSwitch }) {
 
 
     return (
-        <span className="icon_Change" onClick={(icon) => onSwitch(icon)}>{icon}</span>
+        <span className="icon_Change material-icons" onClick={() => onSwitch(icon)}>{icon}</span>
     )
 
 
