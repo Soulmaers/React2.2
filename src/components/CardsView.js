@@ -2,13 +2,15 @@ import React from 'react'
 import ShopCard from './ShopCard'
 import PropTypes from "prop-types";
 
-export default function CardsView({ cards }) {
-
+export default function CardsView(props) {
+    const { cards } = props;
 
     return (
         <div className="card_view">
-            {cards.map((el) =>
-                (<ShopCard card={el} key={el.name + el.color} />))}
+            {cards.map((el, index) => {
+                return <ShopCard card={el} key={index} />
+            })}
+
         </div>
     )
 }
